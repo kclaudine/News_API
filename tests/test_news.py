@@ -9,9 +9,9 @@ class NewTest(unittest.TestCase):
 
     def setUp(self):
         '''
-        set up method that will run before evry test
+        set up method that will run before every test
         '''
-        self.new_source=Sources("CNN","CNN News", "Cable News Networks that is a leader in providings news worlwide","cnn.com","general","USA","en")
+        self.new_source=Sources("CNN","CNN News", "Cable News Networks that is a leader in providings news worldwide","cnn.com","general","USA","en")
 
     def test_instance(self):
         self.assertTrue(isinstance(self.new_source,Sources))
@@ -42,7 +42,7 @@ class ArticlesTest(unittest.TestCase):
     def test_to_check_instance_variables(self):
         self.assertEquals(self.new_article.id,'CNN')
         self.assertEquals(self.new_article.author,'Peter Polle')
-        self.assertEquals(self.new_article.title,'The tech scene in Africa is it the next big thing')
+        self.assertEquals(self.new_article.title,'The tech scene in Africa is at the next big thing')
         self.assertEquals(self.new_article.description,'A look at various tech hubs in Africa')
         self.assertEquals(self.new_article.url,'techi.com')
        
